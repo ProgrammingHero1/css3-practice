@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes slidein {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: yellow;
+            }
+            50% {
+                left: 400px;
+                top: 100px;
+                background-color: red;
+            }
+            100% {
+                left: 800px;
+                top: 0;
+                background-color: yellow;
+            }
+        }
+        
+        .stage {
+            background-color: lightcyan;
+            height: 200px;
+            min-width: 800px;
+        }
+        
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: green;
+            position: absolute;
+        }
+        
+        .stage:hover .ball {
+            animation: slidein 3s ease-in-out 1s infinite alternate;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>

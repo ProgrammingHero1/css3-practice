@@ -1,0 +1,12 @@
+.box {
+    width: 400px;
+    height: 200px;
+    border: 5px solid paleturquoise;
+    overflow: scroll;
+}
+
+.box2 {
+    border: 4px solid peru;
+    width: 400px;
+    height: 200px;
+}
